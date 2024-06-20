@@ -99,10 +99,11 @@ int main(){
 
             if(it== vis.end() && i!=j){
                 cout<<endl<<"Enter the Distance between "<<nodes[i]<<" and "<<
-                nodes[j]<<" if exist else 0: ";
+                nodes[j]<<" if exist else -1: ";
                     vis.push_back({i,j});
                     int dis;
                     cin>>dis;
+                if(dis>0)
                     edges.push_back({i,j,dis});
                 
             }
